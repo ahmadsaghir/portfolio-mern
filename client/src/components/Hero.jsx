@@ -13,7 +13,7 @@ const Hero = () => {
                                  alt="Ahmad Saghir portrait"
                                  className="img-cover"/>
                         </figure>
-                        <div className="flex items-center gap-1.5 text-zinc-400 text-sm tracking-wide">
+                        <div className="flex items-center gap-1.5 text-[rgb(var(--zinc400))] text-sm tracking-wide">
                         <span className="relative w-2 h-2 rounded-full bg-emerald-400 ">
                             <span className="absolute inset-0 w-2 h-2 rounded-full bg-emrald-400 animate-ping">
 
@@ -27,8 +27,10 @@ const Hero = () => {
                     </h2>
                     <div className="flex items-center gap-3">
                         <ButtonPrimary
+                            href="/Ahmad-Saghir-CV.pdf"
                             label="Download CV"
                             icon="download"
+                            target="_blank"
                         />
 
                         <ButtonOutline

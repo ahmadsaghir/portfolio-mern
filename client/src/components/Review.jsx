@@ -1,52 +1,49 @@
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from '@gsap/react';
+
+
+gsap.registerPlugin(useGSAP, ScrollTrigger); 
+
+
 import ReviewCard from './ReviewCard'
 
 const reviews = [
     {
-        content: 'Exceptional web development! Delivered a seamless, responsive site with clean code and great UX.',
-        name: 'Sophia Ramirez',
+        content: 'I am delighted to recommend Ahmad for opportunities in the field of software engineering. Throughout our time studying courses together, I have witnessed his unwavering commitment to excellence, genuine goodwill, and a true passion for the subject. Ahmad is a trustworthy and dedicated individual, making him an asset to any team. I have no doubt that his skills and enthusiasm will contribute significantly to any software engineering environment he joins.',
+        name: 'Mohammad Fares',
         imgSrc: '/images/people-1.jpg',
-        company: 'PixelForge'
+        company: 'Dizayn VIP'
     },
     {
-        content: 'Impressive work! Fast loading times, intuitive design, and flawless backend integration. Highly recommend.',
-        name: 'Ethan Caldwell',
+        content: 'I am happy to recommend Ahmad Saghir, whom I have known for 4 years as both a classmate and a friend. During this time, I have been consistently impressed by his skills and character as a software engineer.',
+        name: 'Murhaf Elmasri',
         imgSrc: '/images/people-2.jpg',
-        company: 'NexaWave'
+        company: 'eduly'
     },
-    {
-        content: 'Outstanding developer! Built a robust site with perfect functionality. Efficient and detail-oriented.',
-        name: 'Liam Bennett',
-        imgSrc: '/images/people-3.jpg',
-        company: 'CodeCraft'
-    },
-    {
-        content: 'Creative and skilled! Produced a modern, user-friendly site that exceeded expectations. Great communication.',
-        name: 'Noah Williams',
-        imgSrc: '/images/people-4.jpg',
-        company: 'BrightWeb'
-    },
-    {
-        content: 'Professional work! Delivered on time, with a polished design and smooth user experience. Top-notch developer.',
-        name: 'Ava Thompson',
-        imgSrc: '/images/people-5.jpg',
-        company: 'TechMosaic'
-    },
-    {
-        content: 'Excellent project execution! High-quality code, responsive design, and exceptional problem-solving skills.',
-        name: 'Jonathan',
-        imgSrc: '/images/people-6.jpg',
-        company: 'Skyline Digital'
-    }
 ];
 
 const Review = () => {
+
+    useGSAP(() =>{
+        gsap.to('.scrub-slide', {
+            scrollTrigger: {
+                trigger: '.scrub-slide',
+                start: '-200% 80%',
+                end: '400% 80%',
+                scrub: true
+            },
+            x: '0'
+        })
+    });
+    
     return (
         <section id="reviews" className="section overflow-hidden">
             <div className="container">
-                <h2 className="headline-2 mb-8">
-                    What our customers say
+                <h2 className="headline-2 mb-8 reveal-up">
+                    Recommendations
                 </h2>
-                <div className="flex items-stretch gap-3 w-fit">
+                <div className="scrub-slide flex items-stretch gap-3 w-fit">
                     {reviews.map(({content, name, imgSrc, company}, key)=>(
                         <ReviewCard
                             key={key}

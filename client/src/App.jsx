@@ -1,3 +1,11 @@
+import { ReactLenis } from 'lenis/react'
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from '@gsap/react';
+
+
+gsap.registerPlugin(useGSAP, ScrollTrigger); 
+
 //Components
 
 import Header from "./components/Header.jsx";
@@ -7,10 +15,32 @@ import Skill from "./components/Skill.jsx";
 import Work from "./components/Work.jsx";
 import Review from "./components/Review.jsx";
 import Contact from "./components/Contact.jsx";
-function App() {
+import Footer from "./components/Footer.jsx";
 
+
+
+function App() {
+  
+  useGSAP(() =>{
+    const elements = gsap.utils.toArray('.reveal-up');
+
+    elements.forEach((element) => {
+      gsap.to(element, {
+        scrollTrigger: {
+          trigger: element,
+          start: '-200 bottom',
+          end: 'bottom 80%',
+          scrub: true
+        },
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: 'power2.out'
+      })
+    });
+  });
   return (
-    <>
+    <ReactLenis root>
       <Header/>
       <main>
         <Hero/>
@@ -20,7 +50,8 @@ function App() {
         <Review/>
         <Contact/>
       </main>
-    </>
+      <Footer/>
+    </ReactLenis>
   )
 }
 

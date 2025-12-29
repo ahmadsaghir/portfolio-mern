@@ -31,6 +31,12 @@ const works = [
         tags: ['MERN', 'Development'],
         projectLink: 'https://github.com/ahmadsaghir/portfolio-mern'
     },
+    {
+        imgSrc: '/images/project-6.jpg',
+        title: 'Book Store',
+        tags: ['React', 'TS', 'Sql'],
+        projectLink: 'https://iqraa.cloud/'
+    },
 ];
 
 const Work = () => {

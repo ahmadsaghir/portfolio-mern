@@ -101,6 +101,27 @@ const skillItem = [
         imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg',
         label: 'Notion',
         desc: 'Project Management'
+    },
+    {
+        imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
+        label: 'TypeScript',
+        desc: 'Programming Language'
+    },
+    {
+    imgSrc: 'https://www.mendix.com/favicon.ico',
+    label: 'Mendix',
+    desc: 'Low-Code Platform'
+    },
+    {
+        imgSrc: 'https://cdn.simpleicons.org/uipath',
+        label: 'UiPath',
+        desc: 'RPA Tool'
+    },
+    {
+        imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+        label: 'Docker',
+        desc: 'Containerization'
+
     }
 ];
 

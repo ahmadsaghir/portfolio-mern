@@ -35,8 +35,9 @@ const sitemap = [
     {
       label: 'Instagram',
       href: 'https://www.instagram.com/ahmadsaghir99'
-    },
-    {/*
+    }
+    /*
+    ,
     {
       label: 'Twitter X',
       href: 'https://x.com/codewithsadee_'
@@ -45,7 +46,7 @@ const sitemap = [
       label: 'CodePen',
       href: 'https://codepen.io/codewithsadee'
     }
-    */}
+    */
   ];
 
 const Footer = () => {

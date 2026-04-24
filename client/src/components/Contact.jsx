@@ -1,3 +1,5 @@
+
+
 const socialLinks = [
     {
         href: 'https://github.com/ahmadsaghir',
@@ -32,14 +34,13 @@ const Contact = () => {
                         Reach out today to discuss your project needs and start collaborating on something amazing!
                     </p>
                     <div className="flex items-center gap-2 mt-auto">
-                        {socialLinks.map(({href, icon, alt}, key)=>(
+                        {socialLinks.map(({href, icon}, key)=>(
                             <a key={key}
                                href={href}
                                target="_blank"
                                className="w-12 h-12 grid place-items-center ring-1 ring-[rgb(var(--zinc700))] rounded-lg 
                                     transition-[background-color, color] hover:bg-[rgb(var(--zinc50))] 
                                     hover:text-[rgb(var(--zinc900))] active:bg-[rgb(var(--zinc50)_/_0.8)] reveal-up"
-                               aria-label={alt}
                             >
                                 {icon}
                             </a>

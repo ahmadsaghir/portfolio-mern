@@ -3,7 +3,6 @@ Allow: /
 Disallow: /admin
 Disallow: /api/private
 
-# AI crawler rules
 User-agent: GPTBot
 Allow: /
 Disallow: /admin
@@ -23,8 +22,5 @@ User-agent: Google-Extended
 Allow: /
 Disallow: /admin
 Disallow: /api/private
-
-# Content Signals preference
-Content-Signal: ai-train=no, search=yes, ai-input=no
 
 Sitemap: https://ahmadsaghir.de/sitemap.xml

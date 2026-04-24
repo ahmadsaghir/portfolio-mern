@@ -1,6 +1,6 @@
 RewriteEngine On
 
-# Markdown negotiation: if Accept contains text/markdown and path is /
+# Serve markdown when explicitly requested on homepage
 RewriteCond %{REQUEST_URI} ^/$
 RewriteCond %{HTTP:Accept} text/markdown [NC]
 RewriteRule ^$ /index.md [L]
@@ -10,7 +10,8 @@ RewriteRule ^$ /index.md [L]
 </IfModule>
 
 <IfModule mod_headers.c>
-  Header always set Link "</.well-known/api-catalog>; rel="api-catalog""
+  Header always unset Link
+  Header always add Link "</.well-known/api-catalog>; rel=\"api-catalog\""
   Header always add Link "</.well-known/agent-skills/index.json>; rel=\"describedby\"; type=\"application/json\""
   Header always add Link "</sitemap.xml>; rel=\"sitemap\"; type=\"application/xml\""
 </IfModule>

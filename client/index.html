@@ -19,6 +19,14 @@
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:wght@400&display=swap" rel="stylesheet">
     </noscript>
+
+    <!-- Critical inline styles to enable fast initial render -->
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body { background: #18181b; color: #fafafa; font-family: system-ui, -apple-system, sans-serif; }
+      #root { display: contents; }
+    </style>
   </head>
   <body>
     <div id="root"></div>

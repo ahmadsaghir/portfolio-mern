@@ -1,5 +1,4 @@
 {
-  "$schema": "https://agentskills.io/schemas/agent-skills-index.v0.2.0.json",
   "skills": [
     {
       "name": "robots-txt",

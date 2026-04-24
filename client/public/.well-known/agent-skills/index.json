@@ -6,21 +6,21 @@
       "type": "discovery",
       "description": "Robots policy for crawlers and AI agents.",
       "url": "https://ahmadsaghir.de/robots.txt",
-      "sha256": "REPLACE_WITH_REAL_SHA256"
+      "sha256": "3ea3eef6f3cead51fd296161d9dc8c4b2f27d3c3462c605c0c50c72d1f3dca04"
     },
     {
       "name": "sitemap",
       "type": "discovery",
       "description": "XML sitemap listing canonical URLs.",
       "url": "https://ahmadsaghir.de/sitemap.xml",
-      "sha256": "REPLACE_WITH_REAL_SHA256"
+      "sha256": "56e5a8e007b753a71fcfe72485db8ba7d51ca0eb817ebcf1790242c53a17499e"
     },
     {
       "name": "api-catalog",
       "type": "api",
       "description": "Linkset-based API discovery document.",
       "url": "https://ahmadsaghir.de/.well-known/api-catalog",
-      "sha256": "REPLACE_WITH_REAL_SHA256"
+      "sha256": "9166bd8f34d1a65c7e8de3dc621e39971127a64a40fb81810236e5c772dc3524"
     }
   ]
 }

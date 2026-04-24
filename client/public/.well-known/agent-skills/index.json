@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentskills.io/schemas/agent-skills-index.v0.2.0.json",
+  "skills": [
+    {
+      "name": "robots-txt",
+      "type": "discovery",
+      "description": "Robots policy for crawlers and AI agents.",
+      "url": "https://ahmadsaghir.de/robots.txt",
+      "sha256": "REPLACE_WITH_REAL_SHA256"
+    },
+    {
+      "name": "sitemap",
+      "type": "discovery",
+      "description": "XML sitemap listing canonical URLs.",
+      "url": "https://ahmadsaghir.de/sitemap.xml",
+      "sha256": "REPLACE_WITH_REAL_SHA256"
+    },
+    {
+      "name": "api-catalog",
+      "type": "api",
+      "description": "Linkset-based API discovery document.",
+      "url": "https://ahmadsaghir.de/.well-known/api-catalog",
+      "sha256": "REPLACE_WITH_REAL_SHA256"
+    }
+  ]
+}

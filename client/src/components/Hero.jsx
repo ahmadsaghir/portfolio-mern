@@ -25,7 +25,7 @@ const Hero = () => {
                         <h2 className="headline-1 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch]">
                             Building Scalable Modern Websites for the Future
                         </h2>
-                        <p className="text-[rgb(var(--zinc400))] text-lg mt-4 max-w-[50ch]">
+                        <p className="text-[rgb(var(--zinc300))] text-lg mt-4 max-w-[50ch]">
                             Crafting elegant solutions with cutting-edge technologies to bring your digital vision to life.
                         </p>
                     </div>

@@ -72,7 +72,7 @@ const Footer = () => {
                                 <li key={key}>
                                     <a 
                                         href={href} 
-                                        className="block text-sm text-[rgb(var(--zinc400))] py-1 
+                                        className="block text-sm text-[rgb(var(--zinc300))] py-1 
                                         transition-colors hover:text-[rgb(var(--zinc200))] reveal-up"
                                     >
                                         {label}
@@ -90,7 +90,7 @@ const Footer = () => {
                                     <a 
                                         href={href}
                                         target="_blank" 
-                                        className="block text-sm text-[rgb(var(--zinc400))] py-1 
+                                        className="block text-sm text-[rgb(var(--zinc300))] py-1 
                                         transition-colors hover:text-[rgb(var(--zinc200))] reveal-up"
                                     >
                                         {label}

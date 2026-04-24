@@ -24,7 +24,7 @@ const ReviewCard = ({
                     </span>
                 ))}*/}
             </div>
-            <p className="text-[rgb(var(--zinc400))] mb-8">{content}</p>
+            <p className="text-[rgb(var(--zinc300))] mb-8">{content}</p>
             <div className="flex items-center gap-2 mt-auto">
                 <figure className="img-box rounded-lg">
                     <img
@@ -39,7 +39,7 @@ const ReviewCard = ({
                 </figure>
                 <div>
                     <p>{name}</p>
-                    <p className="text-xs text-[rgb(var(--zinc400))] tracking-wider">{company}</p>
+                    <p className="text-xs text-[rgb(var(--zinc300))] tracking-wider">{company}</p>
                 </div>
             </div>
         </div>

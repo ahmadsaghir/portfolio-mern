@@ -17,7 +17,7 @@ const SkillCard = ({
             </figure>
             <div className="">
                 <h3 className="">{label}</h3>
-                <p className="text-[rgb(var(--zinc400))] text-sm">
+                <p className="text-[rgb(var(--zinc300))] text-sm">
                     {desc}
                 </p>
             </div>

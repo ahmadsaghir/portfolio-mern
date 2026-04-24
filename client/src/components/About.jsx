@@ -26,7 +26,7 @@ const About = () => {
                                         <span className="text-2xl font-bold md:text-4xl">{number}</span>
                                         <span className="text-sky-400 font-semibold md:text-3xl">+</span>
                                     </div>
-                                    <p className="text-sm text-[rgb(var(--zinc400))]">{label}</p>
+                                    <p className="text-sm text-[rgb(var(--zinc300))]">{label}</p>
                                 </div>
                             ))
                         }

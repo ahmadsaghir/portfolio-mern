@@ -45,7 +45,6 @@ const ProjectCard = ({
                 className="absolute inset-0"
                 aria-label={`View ${title} project`}
             >
-
             </a>
         </div>
     );

@@ -1,6 +1,24 @@
 import ProjectCard from "./ProjectCard.jsx";
 
 const works = [
+        {
+        imgSrc: '/images/project-5.jpg',
+        title: 'Portfolio',
+        tags: ['MERN', 'Development'],
+        projectLink: 'https://github.com/ahmadsaghir/portfolio-mern'
+    },
+    {
+        imgSrc: '/images/project-6.jpg',
+        title: 'Book Store',
+        tags: ['React', 'TS', 'Sql'],
+        projectLink: 'https://iqraa.cloud/'
+    },
+    {
+        imgSrc: '/images/car-washing.png',
+        title: 'Auto Detailing Website',
+        tags: ['React', 'WhatsApp API'],
+        projectLink: 'https://thekingkam.de/'
+    },
     {
         imgSrc: '/images/project-1.jpg',
         title: 'Hospital Automation',
@@ -24,18 +42,6 @@ const works = [
         title: 'Tasks Management',
         tags: ['Web-app', 'CRUD', 'MERN'],
         projectLink: 'https://github.com/ahmadsaghir/task-management-app'
-    },
-    {
-        imgSrc: '/images/project-5.jpg',
-        title: 'Portfolio',
-        tags: ['MERN', 'Development'],
-        projectLink: 'https://github.com/ahmadsaghir/portfolio-mern'
-    },
-    {
-        imgSrc: '/images/project-6.jpg',
-        title: 'Book Store',
-        tags: ['React', 'TS', 'Sql'],
-        projectLink: 'https://iqraa.cloud/'
     },
 ];
 

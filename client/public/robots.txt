@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /api/private
+
+# AI crawler rules
+User-agent: GPTBot
+Allow: /
+Disallow: /admin
+Disallow: /api/private
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /admin
+Disallow: /api/private
+
+User-agent: Claude-Web
+Allow: /
+Disallow: /admin
+Disallow: /api/private
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /admin
+Disallow: /api/private
+
+# Content Signals preference
+Content-Signal: ai-train=no, search=yes, ai-input=no
+
+Sitemap: https://ahmadsaghir.de/sitemap.xml
